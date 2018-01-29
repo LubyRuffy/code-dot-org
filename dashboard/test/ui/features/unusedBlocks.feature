@@ -24,9 +24,9 @@ Scenario: Solve a level with unused blocks
   # The element in question will not respond to simple jQuery triggers,
   # as the event is bound by Blockly, which binds at a lower level.
   # Thus, we have to actually explicitly simulate a mousedown event
-  And execute JavaScript expression "$('.blocklyHelp')[0].dispatchEvent(new MouseEvent('mousedown'))"
+  #And execute JavaScript expression "$('.blocklyHelp')[0].dispatchEvent(new MouseEvent('mousedown'))"
 
-  When I wait to see ".qtip"
+  #When I wait to see ".qtip"
 
   Then I see no difference for "unattached block tooltip"
   And I close my eyes
